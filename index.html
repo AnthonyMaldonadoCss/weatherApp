@@ -6,23 +6,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+
     <title>Weather App</title>
 </head>
 <body>
-    <h1>WELCOME TO WEATHER APP!</h1>
+    <section class="welcome">
+        <h1>WELCOME TO WEATHER APP</h1>
+    </section>
+    
 
     <section class="contenedor_principal"> 
-        <div class="caja_1">
-            <h1 class="temp_valor"></h1>
-            <h2 class="temp_descripcion"></h2>
-        </div>
-        <div class="caja_2">
-            <h2 class="ubicacion"></h2>
+        <div class="caja caja_2">
+            <div class="titulo">
+                <h1>Ubicacion Geográfica</h1>
+            </div>
+
+            <div class="contenido">
+                <h2 class="ubicacion texto">La urbina</h2>
             <img src="" alt="" class="icono_animado">
+            </div>
         </div>
-        <div class="caja_3">
-            <h3>Velocidad del viento</h3>
-            <p class="velocidad_viento"></p>
+        
+        <div class="caja caja_1">
+            <div class="titulo">
+                <h1>Información sobre el clima</h1>
+            </div>
+
+            <div class="contenido">
+                <h1 class="temp_valor texto">525 C</h1>
+            <h2 class="temp_descripcion texto">nublado</h2>
+            </div>
+        </div>
+        
+        <div class="caja caja_3">
+            <div class="titulo">
+                <h1>Información sobre el Viento</h1>
+            </div>
+            
+            <div class="contenido">
+                <h3 class="texto">Velocidad del viento</h3>
+                <p class="velocidad_viento texto">256 nudos</p>
+            </div>
         </div>
     </section>
 
