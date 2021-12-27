@@ -46,7 +46,7 @@ window.addEventListener('load', function(){
                 
                 let [{main, description}] = data.weather
                 
-                temperatureValor.textContent =  `${temp} C`
+                temperatureValor.textContent =  `${temp} C º`
                 temperatureDescription.textContent = description
 
                 ubicacion.textContent = `${name}, Pais ${country}`
