@@ -156,6 +156,31 @@
   .cuerpo{
     height: unset;
   }
+  .footer{
+
+    background: #faeaffb2;
+
+    font-family: 'Quicksand';
+    font-weight: 600;
+
+    margin: 40px 0 0 0;
+    height: 20vh;
+    /* border: var(--chismoso); */
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__redes{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 /*portrait es orientacion horizontal*/
@@ -191,6 +216,10 @@
     height: 55vh;
     margin: 5px;
   }
+
+  .footer{
+    display: flex;
+  }
 }
 @media (min-width: 420px)  and (orientation: portrait){
   .cuerpo{
@@ -198,6 +227,34 @@
   }
   .caja{
     height: 25vh;
-    border: var(--chismoso)
+    /* border: var(--chismoso) */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .footer{
+
+    background: #faeaffb2;
+
+    font-family: 'Quicksand';
+    font-weight: 600;
+
+    margin: 40px 0 0 0;
+    height: 20vh;
+    /* border: var(--chismoso); */
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__redes{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
