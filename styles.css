@@ -218,7 +218,29 @@
   }
 
   .footer{
+
+    background: #faeaffb2;
+
+    font-family: 'Quicksand';
+    font-weight: 600;
+
+    margin: 40px 0 0 0;
+    height: 20vh;
+    /* border: var(--chismoso); */
+    width: 100%;
+
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__redes{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 @media (min-width: 420px)  and (orientation: portrait){
@@ -231,7 +253,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 1024px){
   .footer{
 
     background: #faeaffb2;
