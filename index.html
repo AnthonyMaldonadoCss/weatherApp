@@ -9,48 +9,61 @@
     
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Weather App</title>
 </head>
 <body>
-    <section class="welcome">
-        <h1>WELCOME TO WEATHER APP</h1>
-    </section>
+    <main class="cuerpo">
+        <section class="welcome">
+            <h1>WELCOME TO WEATHER APP</h1>
+        </section>
+        
     
+        <section class="contenedor_principal"> 
+            
+            <div class="caja caja_1">
+                
+                <div class="titulo">
+                    <h1>Temperatura de la zona</h1>
+                </div>
+    
+                <div class="contenido">
+                    <h1 class="temp_valor texto"></h1>
+                    <h2 translate="yes" class="temp_descripcion texto"></h2>
+                </div>
 
-    <section class="contenedor_principal"> 
-        <div class="caja caja_2">
-            <div class="titulo">
-                <h1>Ubicacion Geográfica</h1>
-            </div>
-
-            <div class="contenido">
-                <h2 class="ubicacion texto">La urbina</h2>
-            <img src="" alt="" class="icono_animado">
-            </div>
-        </div>
-        
-        <div class="caja caja_1">
-            <div class="titulo">
-                <h1>Información sobre el clima</h1>
             </div>
 
-            <div class="contenido">
-                <h1 class="temp_valor texto">525 C</h1>
-            <h2 class="temp_descripcion texto">nublado</h2>
-            </div>
-        </div>
-        
-        <div class="caja caja_3">
-            <div class="titulo">
-                <h1>Información sobre el Viento</h1>
+            <div class="caja caja_2">
+                <div class="titulo">
+                    <h1>Ubicacion Geográfica</h1>
+                </div>
+    
+                <div class="contenido">
+                    <h2 class="ubicacion texto"></h2>
+                    <img src="" alt="main" class="icono_animado">
+                </div>
+
             </div>
             
-            <div class="contenido">
-                <h3 class="texto">Velocidad del viento</h3>
-                <p class="velocidad_viento texto">256 nudos</p>
+            <div class="caja caja_3">
+                <div class="titulo">
+                    <h1>Velocidad del Viento</h1>
+                </div>
+                
+                <div class="contenido">
+                    <!-- <h3 class="texto">Velocidad del viento</h3> -->
+                    <p class="velocidad_viento texto"></p>
+                    <img height="35" src="img/wind.png" alt="wind">
+                </div>
+
             </div>
-        </div>
-    </section>
+
+        </section>
+    </main>
 
 <script src="script.js"></script>    
 </body>
