@@ -36,15 +36,18 @@ window.addEventListener('load', function(){
                 //velocidad del viento
                 let {speed, deg} = data.wind
                 //temperatura
-                let temp = Math.round(data.main.temp)
+                //Conversion de Kelvin a Celsius
+                const celsius = 274.15;
+                let kelvin = Math.round(data.main.temp);
+                const temp = Math.abs(kelvin - celsius).toFixed(2); 
                 //Ubicacion Proxima
-                let name = data.name
+                let name = data.name;
                 //Icono
-                let icon = data.weather[0].main
+                let icon = data.weather[0].main;
                 //codigos clima
                 // Thunderstorm - Drizzle - Rain - Snow - Atmosphere - Clear - Clouds
                 
-                let [{main, description}] = data.weather
+                let [{main, description}] = data.weather;
                 
                 temperatureValor.textContent =  `${temp} C º`
                 temperatureDescription.textContent = description
